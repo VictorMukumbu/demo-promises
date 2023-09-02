@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript promises</title>
+    <p id="demo"></p>
+</head>
+<body>
+    <script>
+        let car= new Promise(function(resolve,reject){
+          fuel_fuelTank=true;
+          if (fuel_fuelTank){
+            resolve();
+          }  
+          else 
+          reject();
+        });
+        car.then(function(){
+            document.write("The fuel tank is full. Happy driving!");
+        }).catch(function(){
+            document.write("Fuel tank is not empty");
+        });
+    </script>
+    
+</body>
+</html>
