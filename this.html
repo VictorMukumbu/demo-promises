@@ -7,7 +7,7 @@
     <p id="demo"></p>
 </head>
 <body>
-    <script>
+    <!-- <script>
         var value=50;
 
         function my_function(){
@@ -15,6 +15,17 @@
             alert("value"+value);
             alert("This value"+this.value);
         }
+        my_function();
+    </script> -->
+
+    <script>
+        const random={
+            name:"john",
+            infor(){
+                console.log("Hi! My name is "+this.name);
+            }
+        }
+        random.infor();
     </script>
     
 </body>
