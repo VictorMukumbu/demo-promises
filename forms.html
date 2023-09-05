@@ -4,13 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>form validation</title>
-    <script type="text/javascript"></script>
+    <script type="text/javascript">
+        function validate(){
+            if (document.myform.email.value=="") {
+                alert("please provide your email id");
+                document.myform.email.focus()               
+            }else if(document.myform.password.value==""){
+                alert("please provide your password");
+                document.myform.email.focus()
+                
+            }else{}
+        }
+    </script>
 </head>
 <body>
-    <form action="">
+    <form action="message.html" name="myform" onsubmit="validate()">
         <input type="text" name="email" placeholder="email" id=""><br>
-        <input type="text" name="password" placeholder="pasword" id=""><br>
+        <input type="text" name="password" placeholder="password" id=""><br>
         <button type="submit">Submit</button>
+
     </form>
     
 </body>
